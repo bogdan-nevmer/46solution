@@ -17,6 +17,13 @@ int main() {
 		matrix[i] = new int[m];
 	}
 
-	delete[] matrix;
+
+	for (int i = 0; i < n; i++)
+	{
+
+		delete[] matrix[i];
+	}
+
+
 	return 0;
 }
